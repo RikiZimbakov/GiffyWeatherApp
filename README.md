@@ -41,5 +41,5 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Learn More
 
-I began by following this youtube tutorial [https://www.youtube.com/watch?v=GuA0_Z1llYU] then going from there to incorporate more API calls, and adding interactive backgrounds!
+I began by following [this](https://www.youtube.com/watch?v=GuA0_Z1llYU) youtube tutorial then going from there to incorporate more API calls, and adding interactive backgrounds!
 goodluck!
