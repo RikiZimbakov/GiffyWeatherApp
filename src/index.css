@@ -9,10 +9,12 @@ body {
 }
 
 .app {
-  background-image: url('./assets/main.gif');
+  
+  background-image: url('./assets/gifntext-gif.gif');
   background-size: cover;
   background-position: bottom;
   transition: 0.4 ease-out;
+  ;
 }
 
 .app.clear {
@@ -131,11 +133,11 @@ main {
 }
 
 .extra-info {
-  /* position: fixed;
-  height:60px; */
+  position: fixed;
+  height:60px;
   display: table;
   width: 100%; /*Optional*/
-  /* bottom:0; */
+  bottom:0; 
   table-layout: fixed; /*Optional*/
   border-spacing: 10px; /*Optional*/
 }
@@ -157,6 +159,7 @@ main {
   font-weight: 300;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
   text-align: center;
+  padding-right: 60px;
 }
 
 .extra-info .sunrise{
@@ -165,5 +168,5 @@ main {
   font-size: 22px;
   font-weight: 300;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
-  text-align: right;
+  text-align: left;
 }

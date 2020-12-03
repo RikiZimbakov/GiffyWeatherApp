@@ -23,7 +23,7 @@ function App() {
 
   const dateBuilder= (d) => {
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    let days = ["Sunda  y", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     let day = days[d.getDay()];
     let date = d.getDate();
     let month = months[d.getMonth()];
@@ -35,7 +35,7 @@ function App() {
     var theDate = new Date((weather.sys.sunrise) * 1000);
     var dateString = theDate.toTimeString();
     
-    return dateString;
+    return "\n" + dateString;
   }
 
   return (
@@ -74,7 +74,7 @@ function App() {
           <div className="extra-info">
             <div className="humidity">Humidity: {weather.main.humidity}%</div>
             <div className="feels-like">Feels like: {Math.round(weather.main.feels_like)}°c</div>
-            <div className="sunrise">Sunrise: {sunrisebuilder()}</div>
+            <div className="sunrise">{`Sunrise: ${sunrisebuilder()}`}</div>
           </div>
         </div>
         ) : ('')}
