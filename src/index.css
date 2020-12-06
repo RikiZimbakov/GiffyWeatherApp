@@ -21,6 +21,14 @@ body {
   background-image: url('./assets/clear.gif')
 }
 
+.app.smoke {
+  background-image: url('./assets/smoke.gif')
+}
+
+.app.mist {
+  background-image: url('./assets/mist.gif')
+}
+
 .app.warm {
   background-image: url('./assets/sunny.gif')
 }

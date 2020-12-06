@@ -7,7 +7,7 @@ const api = {
 function App() {
   const [query, setQuery] = useState('');
   const [weather, setWeather] = useState({});
-
+  let checkUndefined;
   const search = evt => {
     if (evt.key === "Enter") {
       fetch(api.base+"weather?q="+query+"&units=metric&APPID="+api.key)
@@ -15,11 +15,13 @@ function App() {
       .then(result =>{
           setQuery('');
           setWeather(result);
-          console.log(result);
+          console.log("i is here dog");
+          checkUndefined = result;
         });
         
     }
   }
+  
 
   const dateBuilder= (d) => {
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -45,7 +47,10 @@ function App() {
     :(weather.weather[0].main === "Clouds") ? 'app cloudy' 
     :(weather.weather[0].main === "Rain") ? 'app rainy'
     :(weather.weather[0].main === "Snow") ? 'app snow'
-    :(weather.weather[0].main === "Wind") ? 'app windy'   
+    :(weather.weather[0].main === "Wind") ? 'app windy'
+    :(weather.weather[0].main === "Smoke") ? 'app smoke'
+    :(weather.weather[0].main === "Mist") ? 'app mist'
+    :(weather.weather[0].main === "Fog") ? 'app mist'  
     : 'app') 
     : 'app'}>
       <main>
